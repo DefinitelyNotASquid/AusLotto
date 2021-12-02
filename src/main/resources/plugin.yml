@@ -1,0 +1,16 @@
+name: AusLotto
+version: 1.0.3
+main: com.mith.Lottery
+api-version: 1.18
+author: Mithrillia
+softdepend:  [Vault]
+
+commands:
+  Lottery:
+    description: Main Lottery plugin command. Use Lottery buy/reload/addtopot/info/draw for more specific functions.
+    aliases: [lot]
+permissions:
+  Lottery.player:
+    default: true
+  Lottery.admin:
+    default: op

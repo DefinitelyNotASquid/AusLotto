@@ -1,0 +1,43 @@
+#Available languages: en
+language: "EN"
+
+#How many tickets can buy each player
+maxTickets: 100
+
+#Price of one ticket (Double)
+priceOfTicket: 5.0
+
+#What type of economy. Vault
+#use type: "VAULT"
+type: "VAULT"
+
+#Use Decimal when plugin displays amount of money
+useDecimalFormat: true
+
+#Taxes from amount of money which winner won (In percent)
+#0 To disable
+taxFromPot: 10
+
+#Sending messages to all players on server. After purchase of ticket or when player won the round
+broadcast:
+    buy: true
+    win: true
+
+#Duration of one round (in Seconds)    
+lotteryCycle: 3600
+
+#Sending info message about lottery (in Seconds)
+infoCycle: 900
+
+#Extra money when player won round of lottery (Double)
+extraPot: 500
+
+#How many players is needed to successfully round of lottery
+minPlayers: 3
+
+#When first player buy tickets round starts. But you can set autoStart: true
+#and after end of one round, next round starts
+autoStart: false
+
+#Sending message about lottery at join the server. (Time, In Pot)
+sendJoinInfo: true

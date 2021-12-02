@@ -1,0 +1,56 @@
+info:
+    prefix: "&6&lAusLotto &f&l>&7"
+    andWord: "and"
+
+    broadcast:
+        buy: "&7Player &6{player} &7bought &6{amountOfTickets} {ticketWord} &7for &6{mainBalanceChar}{price}&7! &6/lottery buy <1-100>"
+        win: "&7Congratulations to player &6{player} &7for winning the lottery!\n&6{player} &7won &6{mainBalanceChar}{price}&7 and bought &6{amountOfTickets} {ticketWord}&7!"
+        drawIn: "&7Draw in: &6{parsedTime}"
+        inPot: "&7Now in pot: &6{mainBalanceChar}{price}&7! You have {playersTickets} tickets in the pot. Buy tickets: &6/lottery buy <1-{maxTickets}>&7!"
+        manualDraw: "&7An Admin has drawn the lottery."
+    help:
+        help: "&7/Lottery help , shows this information!"
+        info: "&7/Lottery info , shows information about the current lottery, such as pot, tickets sold and draw time!"
+        buy: "&7/Lottery buy <x> , buys x amount of tickets for the lottery!"
+        reload: "&7/Lottery reload , reloads the plugin and config! "
+        draw: "&7/Lottery draw , Manually draws the lottery right away!"
+        addToPot: "&7/Lottery addToPot <x> , Adds additional money to the lottery pot!"
+
+balanceChar:
+    main: "$"
+declension:
+    tickets:
+        one: "Ticket"
+        moreThanOne: "Tickets"
+        moreThanFour: "Tickets"
+    hours:
+        one: "H"
+        moreThanOne: "H"
+        moreThanFour: "H"
+    minutes:
+        one: "M"
+        moreThanOne: "M"
+        moreThanFour: "M"
+    seconds:
+        one: "Second"
+        moreThanOne: "Seconds"
+        moreThanFour: "Seconds"
+success:
+    buy: "&7You bought &6{amountOfTickets} {ticketWord} &7for &6{mainBalanceChar}{price}&7!"
+    reload: "&7All files were successfully reloaded!"
+    addToExtraPot: "&7You added &6{mainBalanceChar}{price}&7 to pot!"
+errors:
+    consoleError: "&cYou must be a player!"
+    noPermissions: "&cYou don't have permissions to perform this command!"
+    wrongUsageOfCommand: "&cWrong usage of command!"
+    notNumber: "&cArgument isn't number!"
+    wrongAmount: "&cYou can't buy this count of tickets!"
+    wrongAmountExtraPot: "&cWrong amount! Number has to be higher than 0!"
+    maxTicketsReached: "&cYou already bought the maximum amount of tickets!"
+    overMaxTickets: "&cYou can't buy this amount of tickets!"
+    notEnoughMoney: "&cYou haven't got enough money!"
+    notEnoughMoneyToAddThemIntoPot: "&cYou haven't got enough money!"
+    lackOfPlayers: "&cThere were not enough players to draw the lottery."
+    nobodyParticipated: "&cNo tickets were sold in the lottery."
+    notRunning: "&cN/A"
+    drawEndsInAFewSeconds: "&cYou can't perform this command! The lottery draw ends shortly."
